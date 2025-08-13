@@ -1,0 +1,26 @@
+{
+  "name": "mixpanel-profile-fixer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/fix-mixpanel-profiles.ts",
+    "start": "node dist/fix-mixpanel-profiles.js",
+    "build": "tsc -p .",
+    "dry-run": "DRY_RUN=1 ts-node src/fix-mixpanel-profiles.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mixpanel": "^0.18.0",
+    "mongodb": "^6.6.2",
+    "node-fetch": "2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/node-fetch": "^2.6.13",
+    "cross-env": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
